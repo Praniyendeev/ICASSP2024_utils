@@ -13,8 +13,8 @@ from tqdm import tqdm
 
 model = whisper.load_model("GeoffVdr/whisper-medium-nlcv11", device="cuda")#GeoffVdr/whisper-large-v2-nlcv11
 
-path ="/mnt/nvme/node02/pranav/AE24/data/stimuli/eeg/"
-dump_path = "/storage/pranav/data/transcripts/"
+path ="./data/stimuli/eeg/"
+dump_path = "./data/transcripts/"
 fileList =[f for f in sorted(os.listdir(path)) if "npz.gz" in f]
 
 flag =0
